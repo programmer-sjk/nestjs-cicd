@@ -1,5 +1,11 @@
 FROM node:23-alpine AS build_image
 
+# requirements
+RUN apk update && apk add yarn curl bash
+
+# install node-prune 
+RUN curl -sf https://gobinaries.com/tj/node-prune | sh
+
 WORKDIR /app
 
 COPY package*.json yarn.lock ./
@@ -13,6 +19,9 @@ RUN yarn build
 
 # remove development dependencies
 RUN npm prune --production
+
+# run node prune
+RUN node-prune
 
 FROM node:23-alpine
 
