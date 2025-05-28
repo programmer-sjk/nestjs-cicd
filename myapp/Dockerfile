@@ -1,3 +1,4 @@
+# Stage 1: install & build
 FROM node:23-alpine AS build_image
 
 # requirements
@@ -23,6 +24,7 @@ RUN npm prune --production
 # run node prune
 RUN node-prune
 
+# Stage 2: create a runtime image
 FROM node:23-alpine
 
 WORKDIR /app
