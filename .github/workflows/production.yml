@@ -5,14 +5,13 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: 'ap-northeast-2'                  
-  ECR_REPOSITORY: 'commerce'         
+  AWS_REGION: ap-northeast-2               
+  ECR_REPOSITORY: commerce         
 
 permissions:
   id-token: write
   contents: read
 
-## test
 jobs:
   deploy:
     name: Deploy
