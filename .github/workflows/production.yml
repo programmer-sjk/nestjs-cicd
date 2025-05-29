@@ -28,7 +28,7 @@ jobs:
         role-to-assume: ${{ secrets.AWS_ROLE_NAME }}
         aws-region: ${{ env.AWS_REGION }}
 
-    - name: Login to Amazon ECR
+    - name: Login to Amazon ECRR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
