@@ -5,7 +5,7 @@ FROM node:23-alpine AS build_image
 RUN apk update && apk add yarn curl bash
 
 # install node-prune 
-RUN curl -sf https://gobinaries.com/tj/node-prune | sh
+# RUN curl -sf https://gobinaries.com/tj/node-prune | sh
 
 WORKDIR /app
 
@@ -22,7 +22,7 @@ RUN yarn build
 RUN npm prune --production
 
 # run node prune
-RUN node-prune
+# RUN node-prune
 
 # Stage 2: create a runtime image
 FROM node:23-alpine
