@@ -7,6 +7,6 @@ export class AppService {
   }
 
   getMessage(): string {
-    return 'message3';
+    return 'message';
   } 
 }

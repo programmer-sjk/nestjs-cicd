@@ -14,9 +14,4 @@ export class AppController {
   getMessage(): string {
     return this.appService.getMessage();
   }
-
-  @Get('/test')
-  test(): string {
-    return 'ggggg'
-  }
 }
