@@ -10,7 +10,7 @@ env:
   ECS_SERVICE: ecs-task-test-service
   ECS_CLUSTER: ecs-test
   ECS_TASK_DEFINITION: task-definition.json
-  CONTAINER_NAME: test
+  CONTAINER_NAME: commerce
 
 permissions:
   id-token: write
