@@ -1,7 +1,7 @@
 {
   "containerDefinitions": [
     {
-      "name": "test",
+      "name": "commerce",
       "image": "105719756223.dkr.ecr.ap-northeast-2.amazonaws.com/commerce",
       "cpu": 0,
       "portMappings": [
