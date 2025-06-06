@@ -15,18 +15,15 @@
       ],
       "essential": true,
       "environment": [],
-      "environmentFiles": [],
       "mountPoints": [],
       "volumesFrom": [],
-      "ulimits": [],
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/ecs/ecs-task-test",
           "awslogs-region": "ap-northeast-2",
           "awslogs-stream-prefix": "ecs"
-        },
-        "secretOptions": []
+        }
       },
       "systemControls": []
     }
@@ -68,8 +65,8 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2025-05-30T06:37:18.216Z",
-  "registeredBy": "arn:aws:iam::105719756223:user/jeongkuk.seo@teamultra.co",
+  "registeredAt": "2025-06-06T03:20:21.933Z",
+  "registeredBy": "arn:aws:sts::105719756223:assumed-role/openid-access/GitHubActions",
   "enableFaultInjection": false,
   "tags": []
 }
