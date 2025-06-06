@@ -1,9 +1,10 @@
 {
   "containerDefinitions": [
     {
-      "name": "commerce",
+      "name": "test",
       "image": "105719756223.dkr.ecr.ap-northeast-2.amazonaws.com/commerce",
-      "cpu": 0,
+      "cpu": 2048,
+      "memory": 4096,
       "portMappings": [
         {
           "name": "test-3000-tcp",
@@ -15,20 +16,24 @@
       ],
       "essential": true,
       "environment": [],
+      "environmentFiles": [],
       "mountPoints": [],
       "volumesFrom": [],
+      "ulimits": [],
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/ecs-task-test",
+          "awslogs-group": "/ecs/my-ecs-task",
           "awslogs-region": "ap-northeast-2",
           "awslogs-stream-prefix": "ecs"
-        }
+        },
+        "secretOptions": []
       },
       "systemControls": []
     }
   ],
-  "family": "ecs-task-test",
+  "family": "my-ecs-task",
+  "taskRoleArn": "arn:aws:iam::105719756223:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::105719756223:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "volumes": [],
@@ -45,6 +50,9 @@
     },
     {
       "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+    },
+    {
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
     },
     {
       "name": "ecs.capability.execution-role-ecr-pull"
@@ -65,8 +73,6 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2025-06-06T03:20:21.933Z",
-  "registeredBy": "arn:aws:sts::105719756223:assumed-role/openid-access/GitHubActions",
   "enableFaultInjection": false,
   "tags": []
 }
