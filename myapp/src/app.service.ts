@@ -7,7 +7,7 @@ export class AppService {
   }
 
   getMessage(): string {
-    console.log('watch this in cloudwatch logs');
-    return 'Hi. ECS CI/CD Success';
+    console.log('is changed??');
+    return 'ECS CI/CD Rollback Test';
   }
 }
