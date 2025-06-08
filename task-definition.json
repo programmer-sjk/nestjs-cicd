@@ -1,5 +1,4 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:105719756223:task-definition/my-ecs-task:1",
   "containerDefinitions": [
     {
       "name": "test",
@@ -37,9 +36,7 @@
   "taskRoleArn": "arn:aws:iam::105719756223:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::105719756223:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 1,
   "volumes": [],
-  "status": "ACTIVE",
   "requiresAttributes": [
     {
       "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
@@ -67,16 +64,12 @@
     }
   ],
   "placementConstraints": [],
-  "compatibilities": ["EC2", "FARGATE"],
-  "requiresCompatibilities": ["FARGATE"],
   "cpu": "2048",
   "memory": "4096",
   "runtimePlatform": {
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2025-06-06T04:14:21.156Z",
-  "registeredBy": "arn:aws:iam::105719756223:user/jeongkuk.seo@teamultra.co",
   "enableFaultInjection": false,
   "tags": []
 }
