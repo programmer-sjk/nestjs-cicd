@@ -8,6 +8,6 @@ export class AppService {
 
   getMessage(): string {
     console.log('nooooo??');
-    return 'Hi~~~~~~ ECS CI/CD Rollback Test';
+    return 'Hi~~~~~~ ECS CI/CD Rollback Test       wtf';
   }
 }
