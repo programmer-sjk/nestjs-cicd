@@ -7,7 +7,7 @@ export class AppService {
   }
 
   getMessage(): string {
-    console.log('nooooo??');
+    console.log('noooooooo??');
     return 'Hi~~~~~~ ECS CI/CD Rollback Test       wtf';
   }
 }
