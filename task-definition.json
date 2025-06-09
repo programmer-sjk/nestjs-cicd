@@ -2,9 +2,8 @@
   "containerDefinitions": [
     {
       "name": "test",
-      "image": "105719756223.dkr.ecr.ap-northeast-2.amazonaws.com/commerce",
-      "cpu": 2048,
-      "memory": 4096,
+      "image": "105719756223.dkr.ecr.ap-northeast-2.amazonaws.com/test",
+      "cpu": 0,
       "portMappings": [
         {
           "name": "test-3000-tcp",
@@ -23,7 +22,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/my-ecs-task",
+          "awslogs-group": "/ecs/test",
           "awslogs-region": "ap-northeast-2",
           "awslogs-stream-prefix": "ecs"
         },
@@ -32,14 +31,16 @@
       "systemControls": []
     }
   ],
-  "family": "my-ecs-task",
+  "family": "test",
   "taskRoleArn": "arn:aws:iam::105719756223:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::105719756223:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "volumes": [],
   "placementConstraints": [],
-  "cpu": "2048",
-  "memory": "4096",
+  "compatibilities": ["EC2", "FARGATE"],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "3072",
   "runtimePlatform": {
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"

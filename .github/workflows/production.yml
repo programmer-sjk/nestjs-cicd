@@ -6,9 +6,9 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2
-  ECR_REPOSITORY: commerce
-  ECS_SERVICE: my-ecs-task-service
-  ECS_CLUSTER: my-test-ecs
+  ECR_REPOSITORY: test
+  ECS_SERVICE: tesdt
+  ECS_CLUSTER: test
   ECS_TASK_DEFINITION: task-definition.json
   CONTAINER_NAME: test
 
