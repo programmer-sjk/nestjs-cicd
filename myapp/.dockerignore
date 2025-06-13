@@ -8,5 +8,6 @@ dist
 .gitignore
 .dockerignore
 .prettier*
+.env
 
 Dockerfile
