@@ -15,11 +15,6 @@ export class AppController {
     return this.appService.getMessage();
   }
 
-  @Get('/test')
-  test(): string {
-    return 'test';
-  }
-
   // @Post('/hosted-zone')
   // async createHostedZone() {
   //   return this.appService.createHostedZone();
