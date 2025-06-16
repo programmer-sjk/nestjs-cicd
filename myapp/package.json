@@ -20,9 +20,6 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@aws-sdk/client-acm": "^3.828.0",
-    "@aws-sdk/client-elastic-load-balancing-v2": "^3.828.0",
-    "@aws-sdk/client-route-53": "^3.826.0",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
